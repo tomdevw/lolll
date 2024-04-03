@@ -189,73 +189,7 @@ if game.PlaceId == 2788229376 then
                 for i, v in pairs(getgenv().alts) do
                     if v == plr.UserId then
 
-                        if finalMsg == getgenv().prefix .. "setup bank" then
-                            local function setupbank()
-                                game.Players.LocalPlayer.Character.Head.Anchored = false
-                                
-                                -- Check if the character exists
-                                local character = game.Players.LocalPlayer.Character
-                                if not character then
-                                    return
-                                end
-                                
-                                local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-                                if not humanoidRootPart then
-                                    return
-                                end
-                                
-                                for i, v in pairs(getgenv().alts) do
-                                    
-                                    local altPositions = {
-                                        Alt1 = CFrame.new(-389, 21, -338),
-                                        Alt2 = CFrame.new(-385, 21, -338),
-                                        Alt3 = CFrame.new(-380, 21, -337)
-                                        Alt4 = CFrame.new(-376, 21, -338)
-                                        Alt5 = CFrame.new(-370, 21, -338)
-                                        Alt6 = CFrame.new(-366, 21, -338)
-                                        Alt7 = CFrame.new(-361, 21, -338)
-                                        Alt8 = CFrame.new(-361, 21, -333)
-                                        Alt9 = CFrame.new(-365, 21, -334)
-                                        Alt10 = CFrame.new(-370, 21, -334)
-                                        Alt11 = CFrame.new(-375, 21, -334)
-                                        Alt12 = CFrame.new(-381, 21, -334)
-                                        Alt13 = CFrame.new(-386, 21, -334)
-                                        Alt14 = CFrame.new(-390, 21, -334)
-                                        Alt15 = CFrame.new(-390, 21, -331)
-                                        Alt16 = CFrame.new(-386, 21, -331)
-                                        Alt17 = CFrame.new(-382, 21, -331)
-                                        Alt18 = CFrame.new(-376, 21, -331)
-                                        Alt19 = CFrame.new(-371, 21, -331)
-                                        Alt20 = CFrame.new(-366, 21, -331)
-                                        Alt21 = CFrame.new(-361, 21, -331)
-                                        Alt22 = CFrame.new(-361, 21, -327)
-                                        Alt23 = CFrame.new(-365, 21, -327)
-                                        Alt24 = CFrame.new(-371, 21, -326)
-                                        Alt25 = CFrame.new(-376, 21, -327)
-                                        Alt26 = CFrame.new(-381, 21, -326)
-                                        Alt27 = CFrame.new(-385, 21, -327)
-                                        Alt28 = CFrame.new(-390, 21, -323)
-                                        Alt29 = CFrame.new(-390, 21, -326)
-                                        Alt30 = CFrame.new(-390, 21, -323)
-                                        Alt31 = CFrame.new(-385, 21, -323)
-                                        Alt32 = CFrame.new(-381, 21, -323)
-                                        Alt33 = CFrame.new(-375, 21, -324)
-                                        Alt34 = CFrame.new(-370, 21, -323)
-                                        Alt35 = CFrame.new(-365, 21, -324)
-                                        Alt36 = CFrame.new(-360, 21, -324)
-                                        Alt37 = CFrame.new(-359, 21, -318)
-                                        Alt38 = CFrame.new(-364, 21, -319),
-                                    }
                         
-                                    -- Check if the current alt exists in the positions table
-                                    if altPositions[i] and v == game.Players.LocalPlayer.UserId then
-                                        humanoidRootPart.CFrame = altPositions[i]
-                                    end
-                                end
-                            end
-                        
-                            setupbank()
-                        end
 
                         if finalMsg == getgenv().prefix .. "drop" then
                             drop()
